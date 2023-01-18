@@ -1,8 +1,14 @@
-import './App.css';
+import LandingPage from '../LandingPage/LandingPage';
 import { useState, useEffect } from 'react';
+import AuthPage from '../AuthPage/AuthPage'
+import GamePage from '../GamePage/GamePage';
 
-function App() {
+
+
+export default function App() {
   const [state, setState] = useState(null)
+  const [user, setUser ] = useState(null)
+
   const fetchState = async () => {
     try {
       const response = await fetch('/api/test')
@@ -14,14 +20,13 @@ function App() {
   }
 
   useEffect(() => {
-    fetchState()
+    fetchState()  
   }, [])
   
   return (
-    <div className="App">
-      { state && state.eureka ? <>{state.eureka}</> : <>You are still looking don't give up.</> }
+    <div className='App'>
+      <GamePage/>
     </div>
   );
 }
 
-export default App;
