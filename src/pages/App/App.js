@@ -2,6 +2,7 @@ import LandingPage from '../LandingPage/LandingPage';
 import { useState, useEffect } from 'react';
 import AuthPage from '../AuthPage/AuthPage'
 import GamePage from '../GamePage/GamePage';
+import {Routes, Route} from 'react-router-dom'
 
 
 
@@ -24,9 +25,17 @@ export default function App() {
   }, [])
   
   return (
+    <>
     <div className='App'>
-      <GamePage/>
+      <h1>Jeopardy</h1>
+      <LandingPage />
     </div>
+    <Routes>
+      <Route path='/' element={<LandingPage />} />
+      <Route path='/gamepage' element={<GamePage />} />
+    </Routes>
+    </>
   );
+
 }
 

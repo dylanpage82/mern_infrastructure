@@ -1,3 +1,8 @@
+import {Link} from 'react-router-dom'
 export default function LandingPage(){
-    return<h1>Hello</h1>
+    return(
+        <>
+        <Link to='/gamepage'>Game Page</Link>
+        </>
+    )
 }
