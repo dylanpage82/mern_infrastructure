@@ -9,21 +9,21 @@ import Footer from '../../components/Footer/Footer';
 
 
 export default function App() {
-  const [state, setState] = useState(null)
+  const [jeopardys, setJeopardys] = useState(null)
   const [user, setUser ] = useState(null)
 
-  const fetchState = async () => {
+  const getJeopardys = async () => {
     try {
-      const response = await fetch('/api/test')
+      const response = await fetch('/api/jeopardys')
       const data = await response.json()
-      setState(data)
+      setJeopardys(data)
     } catch (error) {
       console.error(error)
     }
   }
 
   useEffect(() => {
-    fetchState()  
+    getJeopardys()  
   }, [])
   
   return (
@@ -32,7 +32,7 @@ export default function App() {
     <Routes>
       <Route path='/' element={<LandingPage />} />
       <Route path='/gamepage' element={<GamePage />} />
-      <Route path='/studyguidepage' element={<StudyGuidePage/>}/>
+      <Route path='/studyguidepage' element={<StudyGuidePage jeopardys={jeopardys}/>}/>
     </Routes>
     <Footer />
     </>
