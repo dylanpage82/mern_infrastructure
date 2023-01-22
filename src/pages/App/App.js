@@ -3,7 +3,9 @@ import { useState, useEffect } from 'react';
 import AuthPage from '../AuthPage/AuthPage'
 import GamePage from '../GamePage/GamePage';
 import {Routes, Route} from 'react-router-dom'
-
+import StudyGuidePage from '../StudyGuidePage/StudyGuidePage';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 
 export default function App() {
@@ -26,14 +28,13 @@ export default function App() {
   
   return (
     <>
-    <div className='App'>
-      <h1>Jeopardy</h1>
-      <LandingPage />
-    </div>
+    <Header />
     <Routes>
       <Route path='/' element={<LandingPage />} />
       <Route path='/gamepage' element={<GamePage />} />
+      <Route path='/studyguidepage' element={<StudyGuidePage/>}/>
     </Routes>
+    <Footer />
     </>
   );
 
