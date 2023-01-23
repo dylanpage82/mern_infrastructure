@@ -6,6 +6,7 @@ import {Routes, Route} from 'react-router-dom'
 import StudyGuidePage from '../StudyGuidePage/StudyGuidePage';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import NavBar from '../../components/NavBar/NavBar';
 
 
 export default function App() {
@@ -29,9 +30,10 @@ export default function App() {
   return (
     <>
     <Header />
+    <NavBar />
     <Routes>
       <Route path='/' element={<LandingPage />} />
-      <Route path='/gamepage' element={<GamePage />} />
+      <Route path='/gamepage' element={<GamePage jeopardys={jeopardys} />} />
       <Route path='/studyguidepage' element={<StudyGuidePage jeopardys={jeopardys}/>}/>
     </Routes>
     <Footer />

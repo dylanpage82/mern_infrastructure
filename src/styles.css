@@ -1,3 +1,7 @@
+body {
+  font-family: Roboto, Helvetica, Arial, Helvetica, sans-serif;
+}
+
 .page{
   height: 100vh;
 }
@@ -10,7 +14,7 @@
 }
 .core{
   border: solid black 5px;
-  grid-column-start: ;
+  
   height: 100vh
  
   

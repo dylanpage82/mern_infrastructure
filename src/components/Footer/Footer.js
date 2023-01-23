@@ -1,23 +1,41 @@
+
 import React from 'react';
 import {
   MDBFooter,
   MDBContainer,
   MDBCol,
   MDBRow,
+  MDBIcon,
   MDBBtn
 } from 'mdb-react-ui-kit';
 
-export default function Footer() {
+export default function App() {
   return (
-    <MDBFooter className='text-center text-white' style={{ backgroundColor: '#0a4275' }}>
+    <MDBFooter className='bg-dark text-center text-white'>
       <MDBContainer className='p-4 pb-0'>
-        <section className=''>
-          <p className='d-flex justify-content-center align-items-center'>
-            <span className='me-3'>Register for free</span>
-            <MDBBtn type='button' outline color="light" rounded>
-              Sign up!
-            </MDBBtn>
-          </p>
+        <section className='mb-4'>
+          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+            <MDBIcon fab icon='facebook-f' />
+          </MDBBtn>
+
+          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+            <MDBIcon fab icon='twitter' />
+          </MDBBtn>
+
+          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+            <MDBIcon fab icon='google' />
+          </MDBBtn>
+          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+            <MDBIcon fab icon='instagram' />
+          </MDBBtn>
+
+          <MDBBtn outline color="light" floating className='m-1' href='https://www.linkedin.com/in/dylan-page2/' role='button'>
+            <MDBIcon fab icon='linkedin-in' />
+          </MDBBtn>
+
+          <MDBBtn outline color="light" floating className='m-1' href='https://github.com/dylanpage82' role='button'>
+            <MDBIcon fab icon='github' />
+          </MDBBtn>
         </section>
       </MDBContainer>
 
