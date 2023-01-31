@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom"
+import Hamburger from "../../components/Hamburger/Hamburger"
+import Header from "../../components/Header/Header"
 
 export default function StudyGuidePage({jeopardys}){
     return(
         <>
+        <Header />
+        <Hamburger />
         {
             jeopardys && jeopardys.length ?(
                 <ul>

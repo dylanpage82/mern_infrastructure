@@ -1,19 +1,28 @@
+ import { Link } from 'react-router-dom'
 
+export default function ArrayQuestions({
+    jeopardys,
+    setId,
+    setToggleModel
+}){
 
-export default function ArrayQuestions({jeopardys}){
     return(
         <>
         {
             jeopardys && jeopardys.length ?(
-                <div className="container">
+                <div className='container'>
                     {
                         jeopardys
                         .filter(jeopardy => jeopardy.category === "array")
                         .slice(3)
                         .map((jeopardy) => {
                             return(
-                                <div>
-                                    <h1>{jeopardy.answer}</h1>
+                                <div className='box' key={jeopardy._id} onClick={()=>{
+                                    setId(jeopardy._id)
+                                    setToggleModel(true)
+                                }}>200
+
+                                    {/* <Link to={`/questionpage/${jeopardy._id}`}>200</Link> */}
                                 </div>
                             )
                         })

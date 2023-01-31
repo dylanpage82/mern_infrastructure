@@ -151,7 +151,7 @@ const starterJeopardys = [
     },
     {
         category: 'array',
-        question:"Removes the las element in a Array",
+        question:"Removes the last element in a Array",
         answer:'What is .pop'
     },
     {
@@ -196,7 +196,7 @@ const starterJeopardys = [
     },
     {
         category: 'bigo',
-        quesiton: "An Asymptotic Notation for the worst case, or ceiling of growth for a given function. It provides us with an asymptotic upper bound for the growth rate of the runtime of an algorithm.",
+        question: "An Asymptotic Notation for the worst case, or ceiling of growth for a given function. It provides us with an asymptotic upper bound for the growth rate of the runtime of an algorithm.",
         answer: " What is Big O Notation or O(n)"
     },
     {

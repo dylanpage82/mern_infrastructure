@@ -72,10 +72,10 @@ const dataController = {
 }
 
 const apiController = {
-    index(req, res, next){
+    index(req, res){
       res.json(res.locals.data.jeopardys)
     },
-    show(req, res, next){
+    show(req, res){
       res.json(res.locals.data.jeopardy)
     }
   }

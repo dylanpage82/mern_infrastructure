@@ -1,0 +1,49 @@
+.score{
+    
+    background-position: cover;
+    display: flex;
+    justify-content: space-around;
+    height: 14vh;
+    align-items: flex-start;
+}
+.score2{
+    display: flex;
+    justify-content: center;
+}
+.score2 .p1{
+    display: inline;
+    margin-left: 50rem;
+}
+.p1{
+    text-align: center;
+    display: block;
+}
+.p1 h3{
+    cursor: pointer;
+
+}
+.score h2 {
+    background: linear-gradient(to top left, #000088, #0000ff);
+    color: aliceblue;
+}
+.p2{
+    text-align: center;
+    margin-top: 2rem;
+}
+.reset{
+    text-align: center;
+    position: fixed;
+
+}
+.reset p{
+    margin-top: 4rem;
+}
+.score h3{
+    cursor: pointer;
+    background-color: white;
+}
+.p2 h3 :hover {
+    font-weight: bolder;
+}
+
+
