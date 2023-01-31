@@ -20,7 +20,6 @@ export default function GamePage(props){
         <ScoreBoard multiPlayer={props.multiPlayer} p1Score={props.p1Score} setP1Score={props.setP1Score} p2Score={props.p2Score} setP2Score={props.setP2Score}/>
         <PlayerChoice setMultiPlayer={props.setMultiPlayer} multiPlayer={props.multiPlayer}/>
         <Hamburger />
-        </div>
         <div className="page">
             {
                 toggleModel ? <QuestionModel id={id} setId={setId}setToggleModel={setToggleModel} toggleModel={toggleModel} jeopardys={props.jeopardys}/>
@@ -31,6 +30,7 @@ export default function GamePage(props){
             <ReactQuestions jeopardys={props.jeopardys} setId = {setId} setToggleModel={setToggleModel}/>
             <ReduxQuestions jeopardys={props.jeopardys} setId = {setId} setToggleModel={setToggleModel}/>
             <BigOQuestions jeopardys={props.jeopardys} setId = {setId} setToggleModel={setToggleModel}/>
+        </div>
         </div>
         </>
     )

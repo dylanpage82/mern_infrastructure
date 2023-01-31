@@ -11,8 +11,7 @@ export default function Hamburger(){
                   <span className='line line3' />
                 </div>
                 <div className='menu-items'>
-                  <li><Link to='/'>Home</Link> </li>
-                  <li><Link to='/gamepage'>Play Jeopardy</Link></li>
+                  <li><Link to='/'>Play Jeopardy</Link></li>
                   <li><Link to='/studyguidepage'>Study Guide</Link></li>
                   
                 </div>

@@ -12,7 +12,8 @@ body {
   flex-direction: column;
   margin: auto;
   margin-top: 5rem;
-  margin-bottom: 10rem;
+  
+  
 }
 
 .container{
@@ -157,5 +158,7 @@ body {
   transform: rotate(-45deg);
 }
 .background{
-  background-color: rgba(93, 131, 253, 0.784);
+  background:url("https://ecdn.teacherspayteachers.com/thumbitem/Jeopardy-Identifying-Emotions-7145323-1628984876/original-7145323-4.jpg") no-repeat;
+  background-size: cover;
+  
 }

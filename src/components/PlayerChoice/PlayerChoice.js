@@ -1,3 +1,4 @@
+import styles from './PlayerChoice.module.scss'
 import React, { useState } from 'react';
 import {
   MDBBtn,
@@ -22,7 +23,7 @@ export default function PlayerChoice({setMultiPlayer}){
       <MDBBtn onClick={toggleShow}>Multiplayer</MDBBtn>
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex='-1'>
         <MDBModalDialog>
-          <MDBModalContent>
+          <MDBModalContent className={styles.container}>
             <MDBModalHeader>
               <MDBModalTitle>Player Selection</MDBModalTitle>
               <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>

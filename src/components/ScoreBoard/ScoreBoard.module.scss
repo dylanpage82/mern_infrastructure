@@ -1,3 +1,4 @@
+
 .score{
     
     background-position: cover;
@@ -13,6 +14,12 @@
 .score2 .p1{
     display: inline;
     margin-left: 50rem;
+    margin-top: 2rem;
+
+}
+.score2 h2{
+    background: linear-gradient(to top left, #000088, #0000ff);
+    color: aliceblue;
 }
 .p1{
     text-align: center;
@@ -32,15 +39,20 @@
 }
 .reset{
     text-align: center;
-    position: fixed;
+    position: absolute;
 
 }
 .reset p{
     margin-top: 4rem;
 }
+.reset h1{
+    background-color: rgba ;
+    font-size: 4rem;
+    color: blue;
+}
 .score h3{
     cursor: pointer;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.507);
 }
 .p2 h3 :hover {
     font-weight: bolder;

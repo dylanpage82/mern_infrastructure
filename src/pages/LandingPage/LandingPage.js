@@ -7,16 +7,6 @@ export default function LandingPage(){
         <>
         <Header />
         <Hamburger />
-        <div className={styles.page}>
-            <div className={styles.gamepage}>
-                <Link to='/gamepage'>Game Page</Link>
-            </div>
-            <div className={styles.studypage}>
-                <Link to='/studyguidepage'>Study Guide Page</Link>
-            </div>
-        
-        
-        </div>
         </>
     )
 }
